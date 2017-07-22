@@ -4,7 +4,8 @@ body {
 	min-width: 400px;
 	max-width: 1000px;
 	margin:0 auto;
-	}
+	/* text-align: center; */
+}
 h1 { font-size: 40px; }
 h2 { font-size: 32px; }
 h3 { font-size: 26px; }
@@ -58,6 +59,8 @@ table {
 	width: 100%;
 	}
 
-img {
+body img {
 	width: 100%;
+	/* align: center; */
+	/* margin: 0 auto; */
 }
