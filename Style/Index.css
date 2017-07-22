@@ -1,0 +1,113 @@
+h1 {
+	align: left;
+	font-size: 100px;
+	color: #566270;
+	transition: color 0.5s;
+	border-bottom: 1px solid #ededed;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+}
+body {
+	font-family: "Consolas", "Source Han Sans Normal", "思源黑体", "Microsoft YaHei", "微软雅黑";
+
+}
+h1:hover {
+	color: white;
+	background: #566270;
+	transition: color 0.5s
+}
+	
+h1, h1:hover {
+	border: 1px;
+}
+a {
+	text-decoration: none;
+}
+a p {
+	margin: 10px;
+	color: #566279;
+	font-size: 20px;
+	transition: color 0.5s;
+	word-break:break-all;
+}
+a p:hover {
+	transition: color 0.5s;
+	color: #30A9DE;
+}
+body {
+		max-width: 1000px;
+		min-width: 0px;
+		color: #566270;
+		background-color: white;;
+		text-align: center;
+		margin: 0 auto;
+		margin-bottom: 50px;
+		/* padding: 0 2rem; */
+}
+@media screen and (min-width: 2600px) {
+	h1 {
+		font-size: 200px;
+	}
+	body {
+		width: 1300px;
+	}
+}
+@media (max-width: 2600px) and (min-width: 1300px){
+	body {
+		width: 60%;
+	}
+}
+@media (min-width: 1150px) and (max-width: 1300px) {
+	body {
+		width: 70%;
+	}
+}
+@media (min-width: 1000px) and (max-width: 1150px) {
+	body {
+		width: 75%;
+	}
+}
+@media (min-width: 850px) and (max-width: 1000px) {
+	body {
+		width: 80%;
+	}
+}
+@media (min-width: 700px) and (max-width: 850px) {
+	body {
+		width: 85%;
+	}
+}
+@media (min-width: 600px) and (max-width: 700px) {
+	h1 {
+		font-size: 70px;
+	}
+	body {
+		width: 90%;
+		padding: 0;
+	}
+}
+@media (min-width: 450px) and (max-width: 600px) {
+	h1 {
+		font-size: 60px;
+	}
+}
+@media (min-width: 360px) and (max-width: 450px) {
+	h1 {
+		font-size: 50px;
+	}
+}
+@media screen and (max-width: 360px) {
+	h1 {
+		font-size: 35px;
+	}
+}
+
+	 div.Footer,a:link.Footer,a:visited.Footer {
+	padding: 10px;
+	border-top: 1px solid #ededed;
+	text-decoration: none;
+	color: #515151;
+	font-size: 12px;
+	}

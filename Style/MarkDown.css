@@ -1,0 +1,59 @@
+body { 
+	font-family: "等线", "等线 Light", "思源黑体 CN ExtraLight", "思源黑体 CN Light", "方正兰亭超细黑简体", "Geometria Light", "汉仪特细等线简", "Microsoft YAHEI";
+	width: 60%;
+	min-width: 400px;
+	max-width: 1000px;
+	margin:0 auto;
+	}
+h1 { font-size: 40px; }
+h2 { font-size: 32px; }
+h3 { font-size: 26px; }
+h4 { font-size: 20px; }
+h5 { font-size: 15px; }
+h6 { font-size: 13px; }
+p {
+	font-size: 15px;
+	text-indent: 2em;
+	}
+code { 
+	padding: 2px 4px;
+	font-size: 90%;
+	color: #c7254e;
+	background-color: #f9f2f4;
+	border-radius: 0;
+	}
+pre {
+	display: block;
+	padding: 10px;
+	margin: 0 0 10.5px;
+	font-size: 14px;
+	line-height: 1.42857143;
+	word-break: break-all;
+	word-wrap: break-word;
+	color: #333333;
+	background-color: #f5f5f5;
+	border: 1px solid #cccccc;
+	border-radius: 0;
+	}
+blockquote {
+	padding: 10.5px 21px;
+	margin: 0 0 21px;
+	font-size: 18.75;
+	border-left: 5px solid #519aba;
+	background: #eeeeee;
+	}
+ul, ol {
+	margin-top: 0;
+	margin-bottom: 10.5px;
+	}
+li {
+	display: list-item;
+	text-align: -webkit-match-parent;
+	}
+a {
+	color: #2780e3;
+	text-decoration: none;
+	}
+table {
+	width: 100%;
+	}
