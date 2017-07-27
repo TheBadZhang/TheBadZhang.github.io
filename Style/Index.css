@@ -1,8 +1,9 @@
 h1 {
-	align: left;
+	/* align: left; */
 	font-size: 100px;
+	transition: all ease-out 0.5s;
 	color: #566270;
-	transition: color 0.5s;
+	/* transition: background 0.5s; */
 	border-bottom: 1px solid #ededed;
 	margin-bottom: 10px;
 	margin-top: 10px;
@@ -16,7 +17,8 @@ body {
 h1:hover {
 	color: white;
 	background: #566270;
-	transition: color 0.5s
+	transition: all ease-in 0.5s;
+	/* transition: 0.5s; */
 }
 	
 h1, h1:hover {
