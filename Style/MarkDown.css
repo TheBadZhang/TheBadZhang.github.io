@@ -1,20 +1,29 @@
 body { 
-	font-family: "Consolas", "Courier New", "monospace","等线", "等线 Light", "思源黑体 CN ExtraLight", "思源黑体 CN Light", "方正兰亭超细黑简体", "Geometria Light", "汉仪特细等线简", "Microsoft YAHEI";
+	font-family: "Consolas", "Ubuntu Mono", "monospace","等线", "等线 Light", "思源黑体 CN ExtraLight", "思源黑体 CN Light", "方正兰亭超细黑简体", "Geometria Light", "汉仪特细等线简", "Microsoft YAHEI";
 	width: 60%;
 	min-width: 400px; 
 	max-width: 1000px; 
 	margin:0 auto;
-	/* box-shadow: 1px 0 5px rgab(20, 20, 20, 0.2); */
+	padding-top: 20px;
+	box-shadow: 0 0 10px rgba(20, 20, 20, 0.2); 
 	/* text-align: center; */
 }
-h1 { font-size: 40px; }
-h2 { font-size: 32px; }
+h1 {
+	font-size: 40px;
+	margin-left: 40px;
+}
+h2 {
+	font-size: 32px;
+	margin-left: 32px;
+}
 h3 { font-size: 26px; }
 h4 { font-size: 20px; }
 h5 { font-size: 15px; }
 h6 { font-size: 13px; }
 p {
 	font-size: 15px;
+	margin-left: 20px;
+	margin-right: 20px;
 	/* text-indent: 2em; */
 }
 code { 
@@ -38,10 +47,12 @@ pre {
 	/* border: 1px solid #cccccc; */
 	border-radius: 0;
 	}
+blockquote blockquote{
+	box-shadow: -3px 2px 5px rgba(20, 20, 20, 0.2);
+}
 blockquote {
 	padding: 10px 0 10px 15px;
 	/* padding-left: 0; */
-	box-shadow: -3px 2px 5px rgba(20, 20, 20, 0.2);
 	margin: 0;
 	font-size: 18.75;
 	border-left: 5px solid #519aba;

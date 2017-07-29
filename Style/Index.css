@@ -1,52 +1,54 @@
+::selection {background: #566270;color: white;}
 h1 {
-	/* align: left; */
 	font-size: 100px;
 	transition: all ease-out 0.5s;
 	color: #566270;
-	/* transition: background 0.5s; */
 	border-bottom: 1px solid #ededed;
-	margin-bottom: 10px;
-	margin-top: 10px;
+	margin-bottom: 0px;
+	margin-top: 0;
 	padding-bottom: 0px;
 	padding-top: 0px;
+	border: 1px;
 }
-body {
-	font-family: "Consolas", "Source Han Sans Normal", "思源黑体", "Microsoft YaHei", "微软雅黑";
-
-}
-h1:hover {
+h1:hover/* , a:hover, p:hover */{
 	color: white;
 	background: #566270;
 	transition: all ease-in 0.5s;
-	/* transition: 0.5s; */
-}
-	
-h1, h1:hover {
-	border: 1px;
 }
 a {
 	text-decoration: none;
 }
 a p {
-	margin: 10px;
+	margin: 0 auto;
+	padding-top: 5px;
+	padding-bottom: 5px;
 	color: #566279;
-	font-size: 20px;
+	/* font-size: 20px; */
 	transition: color 0.5s;
 	word-break:break-all;
 }
 a p:hover {
-	transition: color 0.5s;
-	color: #30A9DE;
+	transition: all 0.5s;
+	color: white;
+	background: #566270;
 }
 body {
-		max-width: 1000px;
-		min-width: 0px;
-		color: #566270;
-		background-color: white;
-		text-align: center;
-		margin: 0 auto;
-		margin-bottom: 50px;
-		/* padding: 0 2rem; */
+	max-width: 1000px;
+	min-width: 0px;
+	color: #566270;
+	background-color: white;
+	text-align: center;
+	margin: 0 auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	box-shadow: 0 0 5px rgba(20,20,20,0.2);
+	font-family: 'Consolas', 'monospace', "Source Han Sans Normal", "思源黑体", "Microsoft YaHei", "微软雅黑"; 
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 @media screen and (min-width: 2600px) {
 	h1 {
@@ -105,11 +107,12 @@ body {
 		font-size: 35px;
 	}
 }
-
-	 div.Footer,a:link.Footer,a:visited.Footer {
+div.Footer {
+	border-top: 1px solid #ededed; 
+}
+div.Footer,a:link.Footer,a:visited.Footer {
 	padding: 10px;
-	border-top: 1px solid #ededed;
 	text-decoration: none;
 	color: #515151;
 	font-size: 12px;
-	}
+}
