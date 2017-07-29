@@ -1,9 +1,9 @@
 body { 
 	font-family: "Consolas", "Ubuntu Mono", "monospace","等线", "等线 Light", "思源黑体 CN ExtraLight", "思源黑体 CN Light", "方正兰亭超细黑简体", "Geometria Light", "汉仪特细等线简", "Microsoft YAHEI";
 	width: 60%;
-	min-width: 400px; 
+	/* min-width: 400px;  */
 	max-width: 1000px; 
-	margin:0 auto;
+	margin: 0 0 0 0;
 	padding-top: 20px;
 	box-shadow: 0 0 10px rgba(20, 20, 20, 0.2); 
 	/* text-align: center; */
@@ -118,26 +118,17 @@ body img {
 	}
 }
 @media (min-width: 600px) and (max-width: 700px) {
-	h1 {
-		font-size: 70px;
-	}
 	body {
 		width: 90%;
 		padding: 0;
 	}
 }
 @media (min-width: 450px) and (max-width: 600px) {
-	h1 {
-		font-size: 60px;
+	body {
+		width: 100%;
 	}
 }
 @media (min-width: 360px) and (max-width: 450px) {
-	h1 {
-		font-size: 50px;
-	}
 }
 @media screen and (max-width: 360px) {
-	h1 {
-		font-size: 35px;
-	}
 }
