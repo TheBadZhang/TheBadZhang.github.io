@@ -30,22 +30,18 @@ code {
 	/* background-color: #f9f2f4; */
 	border-radius: 0;
 }
+pre code {
+	color : white;
+}
 pre {
-	width: 100%;
-	display: block;
-	padding: 0;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	margin: 0 0 10.5px;
+	padding: 5px 0 5px 10px;
+	border-right: 5px solid #519aba;
+	margin: 0 auto;
 	font-size: 14px;
-	line-height: 1.42857143;
 	word-break: break-all;
 	word-wrap: break-word;
 	color: #333333;
-	background-color: #f5f5f5;  
-	border-right: 5px solid #519aba;
-	/* border: 1px solid #cccccc; */
-	border-radius: 0;
+	background-color: #3f3f3f;
 	}
 blockquote blockquote{
 	box-shadow: -3px 2px 5px rgba(20, 20, 20, 0.2);
