@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>noi.openjudge.cn 01-02 题解 - TheBadZhang</title>
+  <link href="./../../../Style/MarkDown.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div id="content">
+      <h1 id="noiopenjudgecn-01-02">noi.openjudge.cn 01-02题解</h1>
+<h2 id="010210">01.02编程基础之变量定义、赋值及转换(10题)</h2>
+<h3 id="01">01</h3>
+<pre><code class="cpp">#include &lt;cstdio&gt;
+
+int main() {
+
+    printf(&quot;%d %d&quot;, sizeof(int), sizeof(short));
+
+    return 0;
+}
+</code></pre>
+
+<h3 id="02">02</h3>
+<pre><code class="cpp">#include &lt;cstdio&gt;
+
+int main() {
+
+    printf(&quot;%d %d&quot;, sizeof(float), sizeof(double));
+
+    return 0;
+}
+</code></pre>
+
+<h3 id="03">03</h3>
+<pre><code class="cpp">#include &lt;cstdio&gt;
+
+int main() {
+
+    printf(&quot;%d %d&quot;, sizeof(bool), sizeof(char));
+
+    return 0;
+}
+</code></pre>
+
+<h3 id="04">04</h3>
+<pre><code class="cpp">#include &lt;cstdio&gt;
+
+int main() {
+
+    // printf(&quot;%d %d&quot;, int(32768), short(32768));
+    printf(&quot;D C&quot;);
+
+    return 0;
+}
+</code></pre>
+
+<h3 id="05">05</h3>
+<pre><code class="cpp">#include &lt;cstdio&gt;
+
+int main() {
+
+    // printf(&quot;%.9f %.9f&quot;, float(1.000000001), double(1.000000001));
+    printf(&quot;F E&quot;);
+
+    return 0;
+}
+</code></pre>
+
+<h3 id="06">06</h3>
+<pre><code class="cpp">#include &lt;cstdio&gt;
+
+int main() {
+
+    float a;
+    scanf(&quot;%f&quot;, &amp;a);
+    printf(&quot;%d&quot;, int(a));
+
+    return 0;
+}
+</code></pre>
+
+<h3 id="07">07</h3>
+<pre><code class="cpp">#include &lt;cstdio&gt;
+
+int main() {
+
+    char a;
+    scanf(&quot;%c&quot;, &amp;a);
+    printf(&quot;%d&quot;, a);
+
+    return 0;
+}
+</code></pre>
+
+<h3 id="08">08</h3>
+<pre><code class="cpp">#include &lt;cstdio&gt;
+
+int main() {
+
+    char a;
+    int b;
+    scanf(&quot;%d&quot;, &amp;b);
+    a = char(b);
+    printf(&quot;%c&quot;, a);
+
+    return 0;
+}
+</code></pre>
+
+<h3 id="09">09</h3>
+<pre><code class="cpp">#include &lt;cstdio&gt;
+
+int main() {
+
+    int a;
+    scanf(&quot;%d&quot;, &amp;a);
+    printf(&quot;%d&quot;, int(bool(a)));
+
+    return 0;
+}
+</code></pre>
+
+<h3 id="10">10</h3>
+<pre><code class="cpp">#include &lt;cstdio&gt;
+
+int main() {
+
+    printf(&quot;%d&quot;, sizeof(&quot;Hello, World!&quot;));
+
+    return 0;
+}
+</code></pre>
+    </div>
+  </div>
+</body>
+</html>

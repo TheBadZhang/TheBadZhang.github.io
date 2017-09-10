@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>noi.openjudge.cn 01-03 题解 - TheBadZhang</title>
+  <link href="./../../../Style/MarkDown.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div id="content">
+      <h1 id="noiopenjudgecn-01-03">noi.openjudge.cn 01-03题解</h1>
+<h2 id="010320">01.03编程基础之算术表达式与顺序执行(20题)</h2>
+<h3 id="01">01</h3>
+<pre><code class="cpp">#include &lt;cstdio&gt;
+
+int main() {
+
+    int a, b;
+    scanf(&quot;%d %d&quot;, &amp;a, &amp;b);
+    printf(&quot;%d&quot;, a+b);
+
+
+    return 0;
+}
+</code></pre>
+
+<h3 id="02">02</h3>
+<pre><code class="cpp">#include &lt;cstdio&gt;
+
+int main() {
+
+    int a, b, c;
+    scanf(&quot;%d%d%d&quot;, &amp;a, &amp;b, &amp;c);
+    printf(&quot;%d&quot;, (a+b)*c);
+
+
+    return 0;
+}
+</code></pre>
+
+<h3 id="03">03</h3>
+<pre><code class="cpp">#include &lt;cstdio&gt;
+
+int main() {
+
+    int a, b, c;
+    scanf(&quot;%d%d%d&quot;, &amp;a, &amp;b, &amp;c);
+    printf(&quot;%d&quot;, (a+b)/c);
+
+
+    return 0;
+}
+</code></pre>
+
+<h3 id="04">04</h3>
+<pre><code class="cpp">#include &lt;cstdio&gt;
+
+int main() {
+
+    int a, b;
+    scanf(&quot;%d%d&quot;, &amp;a, &amp;b);
+    printf(&quot;%d %d&quot;, (a/b), (a%b));
+
+
+    return 0;
+}
+</code></pre>
+
+<h3 id="05">05</h3>
+<pre><code class="cpp">#include &lt;cstdio&gt;
+
+int main() {
+
+    int a, b;
+    scanf(&quot;%d%d&quot;, &amp;a, &amp;b);
+    printf(&quot;%.9lf&quot;, ((double)a/(double)b));
+
+
+    return 0;
+}
+</code></pre>
+
+<h3 id="06">06</h3>
+<pre><code class="cpp">#include &lt;cstdio&gt;
+
+int main() {
+
+    int a, b;
+    scanf(&quot;%d%d&quot;, &amp;a, &amp;b);
+    printf(&quot;%.3lf%%&quot;, ((double)b/(double)a)*100);
+    //哈？？？输出百分号只能用%%？？
+
+    return 0;
+}
+</code></pre>
+
+<h3 id="07">07</h3>
+<pre><code class="cpp">#include &lt;cstdio&gt;
+
+int main() {
+
+    double a, b, c, d, x;
+    scanf(&quot;%lf%lf%lf%lf%lf&quot;, &amp;x, &amp;a, &amp;b, &amp;c, &amp;d);
+    printf(&quot;%.7lf&quot;, a*(x*x*x)+b*(x*x)+c*x+d);
+
+
+    return 0;
+}
+</code></pre>
+
+<h3 id="08">08</h3>
+<pre><code class="cpp">#include &lt;cstdio&gt;
+
+#define F2C(a) 5*((a)-32)/9
+int main() {
+
+    double a;
+    scanf(&quot;%lf&quot;, &amp;a);
+    printf(&quot;%.5lf&quot;, F2C(a));
+
+
+    return 0;
+}
+</code></pre>
+
+<h3 id="09">09</h3>
+<pre><code class="cpp">#include &lt;cstdio&gt;
+
+#define PI 3.14159
+int main() {
+
+    double a;
+    scanf(&quot;%lf&quot;, &amp;a);
+    printf(&quot;%.4lf %.4lf %.4lf&quot;, 2*a, 2*a*PI, PI*a*a);
+
+
+    return 0;
+}
+</code></pre>
+
+<h3 id="10">10</h3>
+<pre><code class="cpp">#include &lt;cstdio&gt;
+
+int main() {
+
+    float a, b;
+    scanf(&quot;%f%f&quot;, &amp;a, &amp;b);
+    printf(&quot;%.2f&quot;, 1/(1/a + 1/b));
+
+    return 0;
+}
+</code></pre>
+
+<h3 id="11">11</h3>
+<pre><code class="cpp">#include &lt;cstdio&gt;
+
+int main() {
+
+    double a, b;
+    scanf(&quot;%lf%lf&quot;, &amp;a, &amp;b);
+    printf(&quot;%g&quot;, a-((int)(a/b))*b);
+
+    return 0;
+}
+</code></pre>
+
+<h3 id="12">12</h3>
+<pre><code class="cpp">#include &lt;cstdio&gt;
+
+#define PI 3.14
+int main() {
+
+    double a;
+    scanf(&quot;%lf&quot;, &amp;a);
+    printf(&quot;%.2lf&quot;, (4.0/3)*PI*(a*a*a));
+
+
+    return 0;
+}
+</code></pre>
+
+<h3 id="13">13</h3>
+<pre><code class="cpp">#include &lt;cstdio&gt;
+
+int main() {
+
+    int a;
+    scanf(&quot;%d&quot;, &amp;a);
+    printf(&quot;%d%d%d&quot;, a%10, a/10%10, a/100);
+
+
+    return 0;
+}
+</code></pre>
+
+<h3 id="14">14</h3>
+<pre><code class="cpp">#include &lt;cstdio&gt;
+#include &lt;cmath&gt;
+
+#define PI 3.14159
+int main() {
+
+    double r, h;
+    scanf(&quot;%lf%lf&quot;, &amp;h, &amp;r);
+    printf(&quot;%.0lf&quot;, ceil(20/((PI*(r*r)*h)/1000)));
+
+    return 0;
+}
+</code></pre>
+
+<h3 id="15">15</h3>
+<pre><code class="cpp">#include &lt;cstdio&gt;
+
+int main() {
+
+    int a, b,c;
+    scanf(&quot;%d%d%d&quot;, &amp;a, &amp;b, &amp;c);
+    printf(&quot;%d&quot;, (int)(a - (c * (1.0/b))));
+
+    return 0;
+}
+</code></pre>
+
+<h3 id="16">16</h3>
+<pre><code class="cpp">#include &lt;cstdio&gt;
+#include &lt;cmath&gt;
+
+#define PI 3.14159
+int main() {
+
+    double a, b, c, d;
+    scanf(&quot;%lf%lf%lf%lf&quot;, &amp;a, &amp;b, &amp;c, &amp;d);
+    printf(&quot;%.3lf&quot;, sqrt(pow(a-c, 2) + pow(b - d, 2)));
+
+    return 0;
+}
+</code></pre>
+
+<h3 id="17">17</h3>
+<pre><code class="cpp">#include &lt;cstdio&gt;
+#include &lt;cmath&gt;
+
+#define PI 3.14159
+int main() {
+
+    double a, b, c, d;
+    scanf(&quot;%lf%lf%lf%lf&quot;, &amp;a, &amp;b, &amp;c, &amp;d);
+    printf(&quot;%.3lf&quot;, sqrt(pow(a-c, 2) + pow(b - d, 2)));
+
+    return 0;
+}
+</code></pre>
+
+<h3 id="18">18</h3>
+<pre><code class="cpp">#include &lt;cstdio&gt;
+
+int main() {
+
+    int a, b, n;
+    scanf(&quot;%d%d%d&quot;, &amp;a, &amp;b, &amp;n);
+    printf(&quot;%d&quot;, ((a-(b-a))+n*(b-a)));
+
+
+    return 0;
+}
+</code></pre>
+
+<h3 id="19">19</h3>
+<pre><code class="cpp">#include &lt;cstdio&gt;
+
+int main() {
+
+    double a, b;
+    scanf(&quot;%lf%lf&quot;, &amp;a, &amp;b);
+    printf(&quot;%.0lf&quot;, a*b);
+
+
+    return 0;
+}
+</code></pre>
+
+<h3 id="20">20</h3>
+<pre><code class="cpp">#include &lt;cstdio&gt;
+#include &lt;cmath&gt;
+
+int main() {
+
+    double a;
+    scanf(&quot;%lf&quot;, &amp;a);
+    printf(&quot;%.0lf&quot;, pow(2, a));
+
+
+    return 0;
+}
+</code></pre>
+    </div>
+  </div>
+</body>
+</html>
