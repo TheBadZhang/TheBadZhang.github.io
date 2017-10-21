@@ -1,10 +1,13 @@
 body { 
 	font-family: "Consolas", "Ubuntu Mono", "monospace","等线", "等线 Light", "思源黑体 CN ExtraLight", "思源黑体 CN Light", "方正兰亭超细黑简体", "Geometria Light", "汉仪特细等线简", "Microsoft YAHEI";
 	width: 60%;
+	height: 100%;
+	color: black;
 	/* min-width: 400px;  */
 	max-width: 1000px; 
 	margin: 0 auto;
 	padding-top: 20px;
+	padding-bottom: 20px;
 	box-shadow: 0 0 10px rgba(20, 20, 20, 0.2); 
 	/* text-align: center; */
 }
