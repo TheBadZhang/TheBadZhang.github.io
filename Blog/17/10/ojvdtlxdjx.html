@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <link href="./../../../Style/MarkDown.css" rel="stylesheet">
+  <title>OJ评判结果详解 - TheBadZhang</title>
+</head>
+<body>
+  <div class="container">
+    <div id="content">
+      <h1 id="ojacmer">常见OJ评判结果对照表，作为ACMer你懂得！</h1>
+<table>
+<thead>
+<tr>
+<th align="left">状态</th>
+<th align="left">原因</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>Waiting</code></td>
+<td align="left">你的程序刚刚提交，正在等待OJ评测你的程序</td>
+</tr>
+<tr>
+<td align="left"><code>Queuing</code></td>
+<td align="left">提交太多了，OJ无法在第一时间给所有提交以评判结果，后面提交的程序将暂时处于排队状态等待OJ的评判。不过这个过程一般不会很长</td>
+</tr>
+<tr>
+<td align="left"><code>Compiling</code></td>
+<td align="left">OJ正在编译你的程序</td>
+</tr>
+<tr>
+<td align="left">Judging</td>
+<td align="left">OJ正在检查您程序的输出是否正确。</td>
+</tr>
+<tr>
+<td align="left"><code>Accepted</code> (<code>AC</code>)</td>
+<td align="left">OK!你的程序是正确的 ^_^</td>
+</tr>
+<tr>
+<td align="left"><code>Wrong Answer</code> (<code>WA</code>)</td>
+<td align="left">你的程序运行的结果和正确结果不同。状态页面CASE那一览显示的是你的程序在第几个样例上出错的</td>
+</tr>
+<tr>
+<td align="left"><code>Time Limit Exceeded</code> (<code>TLE</code>)</td>
+<td align="left">你的程序运行时间太长了，超过了对应题目的时间限制</td>
+</tr>
+<tr>
+<td align="left"><code>Memory Limit Exceeded</code> (<code>MLE</code>)</td>
+<td align="left">你的程序运行所用的内存太多了，超过了对应题目的限制</td>
+</tr>
+<tr>
+<td align="left"><code>Output Limit Exceeded</code> (<code>OLE</code>)</td>
+<td align="left">你的程序输出了太多的内容了，超过了OJ的限制，轻检查你的程序中是否有可能存在无限循环输出</td>
+</tr>
+<tr>
+<td align="left"><code>Floating Point Error</code></td>
+<td align="left">Divide by 0，除0错误</td>
+</tr>
+<tr>
+<td align="left"><code>Segmentation Fault</code></td>
+<td align="left">有2中情况可能导致次错误</td>
+</tr>
+<tr>
+<td align="left"><code>buffer overflow</code></td>
+<td align="left">缓冲区溢出，也就是你访问 了非法内存，比如你神情了一个大小为2的数组a，却访问了a[10000]，或者在C/C++中访问了空指针等等</td>
+</tr>
+<tr>
+<td align="left"><code>stack overflow</code></td>
+<td align="left">堆栈溢出，有可能你在c/c++程序的函数中神情了过大的空间，或者递归层次太多，导致堆栈溢出了，轻记住堆栈的大小为8192KB</td>
+</tr>
+<tr>
+<td align="left"><code>Runtime Error</code> (<code>RE</code>)</td>
+<td align="left">你的程序在运行的时候出错了，异常终止了，导致这种状态的情况有肯多，一般都是一些非法操作，比如文件操作</td>
+</tr>
+<tr>
+<td align="left"><code>Restricted Function</code></td>
+<td align="left">你的程序调用了不该调用的函数，比如fork(),execv(),socket等等危险的函数，清牢记一点：在你的程序中只作与解决问题有关的事情，尽情其他的操作都会被OJ拦截下来。</td>
+</tr>
+<tr>
+<td align="left"><code>Compilation Error</code> (<code>CE</code>)</td>
+<td align="left">编译错误，如果你的程序在本机能够正常编译，请在下面的编译出错怎么办查看更详细的解决办法。</td>
+</tr>
+<tr>
+<td align="left"><code>Presentation Error</code> (<code>PE</code>)</td>
+<td align="left">你的程序运行的结果是正确的，但是格式和正确结果有点不一样。请检查程序的输出是否多了或者少了空格（' '）、制表符（'\t'）或者换行符（'\n'）。离AC就差一点点啦！</td>
+</tr>
+<tr>
+<td align="left"><code>System Error</code> (<code>SE</code>)</td>
+<td align="left">OJ内部出现错误。由于我们的OJ可能存在一些小问题，所以出现这个信息请原谅，同时请及时与管理员联系。</td>
+</tr>
+</tbody>
+</table>
+    </div>
+  </div>
+</body>
+</html>

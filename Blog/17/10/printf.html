@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <link href="./../../../Style/MarkDown.css" rel="stylesheet">
+  <title>printf 函数格式描述串详解 - TheBadZhang</title>
+</head>
+<body>
+  <div class="container">
+    <div id="content">
+      <h1 id="printf">printf 函数 相关</h1>
+<h2 id="_1">格式描述串</h2>
+<p>"格式描述串"是由一系列的"格式转换说明符号"组成,格式转换说明符号的描述形式如下:
+% [+][-] 0 m[.n] [输出精度] &lt;形式字母&gt;</p>
+<table>
+<thead>
+<tr>
+<th align="center"></th>
+<th align="left"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">%:符号%本身;</td>
+<td align="left">符号%本身，必要时使用%%</td>
+</tr>
+<tr>
+<td align="center">[+][-]</td>
+<td align="left">指定输出位置,如果指定+或者缺省时为右对齐,如果为"-"的时候为左对齐;</td>
+</tr>
+<tr>
+<td align="center">0</td>
+<td align="left">指定不被使用的空位置填写0,入股不指定使用0,则不使用的位置为空白.该项仅仅对树枝输出时才可以指定,对字符串输出不用指定.例如 <br> int x=234;<br> printf("%05d",x);//00234<br> printf("%5d",x);//**234</td>
+</tr>
+<tr>
+<td align="center">m[.n]</td>
+<td align="left">指定输出长度,如果输出的是实例,则m表示该项输出占用字符位置的总长度,n表示小数部分的字</td>
+</tr>
+<tr>
+<td align="center">输出精度</td>
+<td align="left">如果形式字母是d,x,o.u,则可以指定如下两类精度<br> l:long型输出精度<br> h:short型输出精度<br> 默认时为int型精度<br> 如:long x=123454578;printf("%d",x);<br> 如果形式字母为e,f,g的时候,则指定l的 时候为double精度,不指定为float精度;</td>
+</tr>
+<tr>
+<td align="center">形式字母:<br> 制定输出格式</td>
+<td align="left"><br> d:十进制整型数 <br> i:十进制整型数 <br> x:十六进制整型数 <br> o:八进制整型数 <br> u:无符号十进制整型数 <br> c:单个字符; <br> s:字符串 <br> e:指数形式的浮点数 <br> f:小数形式的浮点数 <br> g:e和f中比较短的一种 <br> p:显示变量所在的内存地址 <br> n:它不是向printf()传递格式化信息,而是令printf()把自己已经输出的字符总数放到相应变元指的整形变量中</td>
+</tr>
+</tbody>
+</table>
+    </div>
+  </div>
+</body>
+</html>
