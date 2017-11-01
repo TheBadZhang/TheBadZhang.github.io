@@ -18,12 +18,11 @@ h4 { font-size: 20px; }
 h5 { font-size: 15px; }
 h6 { font-size: 13px; }
 h1, h2, h3,h4, h5, h6 {
-	padding-left: 40px;
+	margin: 0 auto;
 }
 p {
 	font-size: 15px;
-	margin-left: 40px;
-	margin-right: 40px;
+	margin: 0 auto;
 	/* text-indent: 2em; */
 }
 code { 
