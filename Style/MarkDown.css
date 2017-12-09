@@ -1,14 +1,22 @@
+html {
+	height: 100%;
+	width: 100%;
+	margin: 0 auto;
+	word-break: break-all;
+	word-wrap: break-word;
+}
 body { 
 	font-family: "Consolas", "Ubuntu Mono", "monospace","等线", "等线 Light", "思源黑体 CN ExtraLight", "思源黑体 CN Light", "方正兰亭超细黑简体", "Geometria Light", "汉仪特细等线简", "Microsoft YAHEI";
 	width: 60%;
-	height: 100%;
+	max-width: 1000px;
+	height: -webkit-calc( 100% - 40px );
+	background-color: white;
 	color: black;
 	/* min-width: 400px;  */
-	max-width: 1000px; 
 	margin: 0 auto;
 	padding-top: 20px;
 	padding-bottom: 20px;
-	box-shadow: 0 0 10px rgba(20, 20, 20, 0.2); 
+	/* box-shadow: 0 0 1px rgba(20, 20, 20, 0.2);  */
 	/* text-align: center; */
 }
 h1 { font-size: 40px; }
@@ -31,6 +39,8 @@ code {
 	color: #c7254e;
 	/* background-color: #f9f2f4; */
 	border-radius: 0;
+	/* word-break: break-all; */
+	/* word-wrap: break-word; */
 }
 pre code {
 	color : white;
@@ -40,8 +50,8 @@ pre {
 	border-right: 5px solid #519aba;
 	margin: 0 auto;
 	font-size: 14px;
-	word-break: break-all;
-	word-wrap: break-word;
+	/* word-break: break-all; */
+	/* word-wrap: break-word; */
 	color: #333333;
 	background-color: #3f3f3f;
 	}
@@ -61,8 +71,10 @@ ul, ol {
 	margin-bottom: 10.5px;
 	margin-left: 40px;
 	margin-right: 40px;
+	max-width: 100%;
 }
 li {
+	max-width: 100%;
 	display: list-item;
 	text-align: -webkit-match-parent;
 }
