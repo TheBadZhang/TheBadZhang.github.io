@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>title H1</title>
+        
+    <link href="../../../Style/MarkDown.css" rel="stylesheet">
+    </head>
+    <body class="vscode-light">
+        <p>mdzz<br>
+you too</p>
+<!--其实这个地方有两个空格在ss之后，起到了强制换行的作用-->
+<!--换行真的很重要-->
+<!--六级标题,尾部的#是可选的-->
+<h1 id="title-h1">title H1</h1>
+<h2 id="tiele-h2">tiele H2</h2>
+<h3 id="title-h3">title H3</h3>
+<h4 id="title-h4">title H4</h4>
+<h5 id="title-h5">title H5</h5>
+<h6 id="title-h6">title H6</h6>
+<h1 id="%e5%a4%a7%e6%a0%87%e9%a2%98%e7%ad%89%e4%bb%b7%e4%ba%8e%e4%b8%80%e7%ba%a7%e6%a0%87%e9%a2%98--title-first"><!--大标题，等价于一级标题-->
+title first</h1>
+<h2 id="%e5%b0%8f%e6%a0%87%e9%a2%98%e7%ad%89%e4%bb%b7%e4%ba%8e%e4%ba%8c%e7%ba%a7%e6%a0%87%e9%a2%98--title-second"><!--小标题，等价于二级标题</-->
+title second</h2>
+<!--引用-->
+<blockquote>
+<hr>
+<p>like this</p>
+<blockquote>
+<p>and this</p>
+</blockquote>
+<p>我怎么会知道上面要空一个才能回到最左边的引用<br>
+当然，在引用里面放什么也都是可以的（也支持换行依旧保持引用，只要不空一行就好）<br>
+例如</p>
+<h1 id="%e4%b8%80%e4%b8%aa%e6%a0%87%e9%a2%98">一个标题</h1>
+<p>是不是觉得很酷呢</p>
+</blockquote>
+<!--无序列表-->
+<ul>
+<li>first</li>
+</ul>
+<ul>
+<li>second</li>
+</ul>
+<ul>
+<li>
+<p>third</p>
+<ul>
+<li>forth</li>
+</ul>
+<ul>
+<li>fifth
+<ul>
+<li>sixth</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>这也可以偷懒用<br>
+如果有两行以上的话</p>
+</li>
+<li>
+<p>但是就没有前面那个小点点的了</p>
+<blockquote>
+<p>各种嵌套啦，我都觉得我不能把所有东西表示完，但是大家都会的吧<br>
+毕竟大家都挺聪明的</p>
+</blockquote>
+</li>
+</ul>
+<!--有序列表-->
+<ol>
+<li>first</li>
+<li>second</li>
+<li>hello
+<ol>
+<li>ss</li>
+<li>sdf
+<ol start="77">
+<li>sdf</li>
+<li>sdf</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<!--表格-->
+<table>
+<thead>
+<tr>
+<th style="text-align:left">this is a head</th>
+<th style="text-align:center">这是一个头，至于是什么头，不知道</th>
+<th style="text-align:right">hello</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">ssdf</td>
+<td style="text-align:center">列表示例</td>
+<td style="text-align:right">fdfsdfdfs</td>
+</tr>
+<tr>
+<td style="text-align:left">ssssssssssssss</td>
+<td style="text-align:center">sgsgdfhdfgsdfa</td>
+<td style="text-align:right">sdfsd</td>
+</tr>
+</tbody>
+</table>
+<!--恐怕眼睛亮的同学应该已经看出来了，这是个表格，分号的作用则是左对齐还是右对齐还是
+居中，分号在什么位置就是什么对齐，两边都有一个则是居中-->
+<!--但是这个表格没有纵纹正的是让我觉得好不舒服的说-->
+<!--代码区块-->
+<pre><code>这样就是一个代码区块了
+事实上，我看不出来有什么变化，除了字的颜色
+在这个插件上，是这样子的，但是在网页上一般要制作成
+常见的模样，至于是什么模样，随便啦
+</code></pre>
+<!--围栏式代码块-->
+<pre><code><code><div>围栏式代码区块，就是代码区块四周弄个围栏
+</div></code></code></pre>
+<!--也可以用间隔号-->
+<pre><code><code><div>sdfsdf
+</div></code></code></pre>
+<p><code>ssssd</code></p>
+<!--分割线-->
+<hr>
+<hr>
+<!--由三个或三个以上的减号和星号构成，之间可以有空格-->
+<p>[X] sd</p>
+<!--有些编辑器可能支持复选框-->
+<!--强调&突出、删除线-->
+<p><em>like you</em><br>
+<strong>like you</strong><br>
+<em><strong>like you</strong></em><br>
+<em>love you</em><br>
+<strong>love you</strong><br>
+<em><strong>love you</strong></em><br>
+<s>It's really cool.</s></p>
+<p><a href="mailto:CharletteChris@outlook.com">CharletteChris@outlook.com</a></p>
+<!--Email-->
+<!--链接，内联风格-->
+<p><a href="https://www.baidu.com" title="title">baidu</a></p>
+<!--title 属性是可选的，可以用括号、单引号和双引号标出，一般使用双引号-->
+<!--链接，外联风格-->
+<p><a href="https://www.baidu.com" title="baidu">baidu</a><br>
+<a href="https://www.baidu.com" title="隐式链接">baidu</a></p>
+<!--可以在标记的位置留空-->
+<!--图片链接，和链接也没有什么特别大的区别，就是在前面加了一个感叹号-->
+<p><img src="http://p1.bqimg.com/4851/07e5dc98508ec3a2.png" alt="baidu" title="title"></p>
+<!--title 属性是可选的，可以用括号、单引号和双引号标出，一般使用双引号-->
+<!--链接，外联风格-->
+<p><img src="http://p1.bqimg.com/4851/07e5dc98508ec3a2.png" alt="baidu" title="baidu"><br>
+<img src="http://p1.bqimg.com/4851/07e5dc98508ec3a2.png" alt="baidus" title="隐式链接"></p>
+<!--可以在标记的位置留空-->
+<p>![baidu][3s]</p>
+<p><s>删除线</s></p>
+<!--删除线-->
+<p>😊</p>
+<pre><code class="language-cpp"><div><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;iostream&gt;</span></span>
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">(<span class="hljs-keyword">int</span> argc, <span class="hljs-keyword">char</span> * argv[])</span> </span>{
+
+	<span class="hljs-built_in">std</span>::<span class="hljs-built_in">cout</span> &lt;&lt; <span class="hljs-string">"Hello World"</span> &lt;&lt; <span class="hljs-built_in">std</span>::<span class="hljs-built_in">endl</span>;
+
+
+	<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</div></code></pre>
+
+    </body>
+    </html>
